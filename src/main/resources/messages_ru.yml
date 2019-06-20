@@ -1,0 +1,245 @@
+shop:
+    #Villager name
+    name: '&4Магазин'
+    ###Groups name
+    enchant: '&5Чародейство'
+    potions: '&bЗельеварение'
+    food: '&1Пища'
+    other: '&7Разное'
+    blocks: '&8Блоки'
+    stuff: '&eМатериалы'
+    resources: '&2Ресурсы'
+generic:
+    "yes": "&aДа"
+    "no": "&cНет"
+    enabled: '&aВключено'
+    disabled: '&cОтключено'
+mobs:
+    diamond_defender: '&5Защитник алмазов'
+    alchemist_soul: '&bДух алхимика'
+    alchemists_coin:
+        name: 'Монета алхимика'
+        lore: 'Особая валюта алхимии' #only 1 string, use it in shop.yml
+game:
+    game: 'Игра'
+    game_started: 'Игра «{0}»&7 начата.'
+    game_ended: 'Игра «{0}»&7 окончена.'
+    game_locked: 'Игра закрыта. Только администраторы могут присоединиться.'
+    join_disabled: 'Вы не можете присоединиться к этой игре.'
+    join_game: '&r{0}&7 присоединяется к игре'
+    quit_game: '&r{0}&7 покидает игру'
+    quit_game_reconnect: 'У {0}&7 есть &b{1}&7 минут, чтобы переподключиться'
+    reconnect_success_1: 'Вы переподключились к игре'
+    reconnect_success_2: '{0} переподключился к игре'
+    waiting_players: 'Ожидание игроков...'
+    choose_team: 'Выберите &aкоманду&7 и подождите начала &aигры'
+    game_running: 'Игра уже запущена. Вы можете либо выбрать команду и играть, либо остаться наблюдателем'
+    game_unavailable: 'Эта игра пока недоступна'
+    quartz_break_failed: '&cНельзя разрушать ядро своей команды'
+    quartz_destroy: '{0}&7 разрушил ядро {1} команды'
+    quartz_broken: '&cВаше ядро разрушено'
+    chat_failed: '&cВы не можете здесь писать в чат'
+    respawn: 'Вы возродитесь через &b{0}&7 с'
+    title:
+        waiting: 
+            top: '{0}'
+            bot: 'Игра начнётся через &b{0}&7 с'
+        started:
+            top: '&bИгра начата'
+            bot: '&7Желаем удачи!'
+        win: 
+            top: '{0}'
+            bot: 'победили в игре'
+chat_formats:
+    f_lobby: '&b{lvl}&8 |&r %1$s &8\u00BB&r %2$s'
+    f_spect: '&8Наблюдение |&r %1$s &8\u00BB&r %2$s'
+    f_team: '&8Команда |&r %1$s &8\u00BB&r %2$s'
+    f_all: '&8Все |&r %1$s &8\u00BB&r %2$s'
+team:
+    team: 'Команда'
+    win: '{0}&7 победили в игре'
+    team_locked: 'Команда пока закрыта. Только &bVIP&7s может присоединиться'
+    team_join_disallow: 'Вы не можете присоединиться к этой команде'
+    team_already: 'Вы уже состоите в этой команде'
+    team_join: 'Вы присоединились к команде {0}'
+    team_quit: 'Вы покинули команду {0}'
+    team_join_unbalanced: 'Команды неуравновешенны. Выберите другую команду'
+quartz:
+    break_quartz_own: '&cНельзя разрушать ядро своей команды'
+    break_quartz_destroy: '{0}&7 разрушил ядро команды {1}'
+    quartz_broken: '&cВаше ядро разрушено'
+#{0} - player
+#{1} - killer
+death:
+    self: '{0} умер'
+    killed: '{0} убит {1}'
+    fall_self: '{0} был обречён на падение'
+    fall: '{0} свалился благодаря {1}'
+    fire_self: '{0} сгорел заживо'
+    fire: '{0} сожжён {1}'
+    fire_aspect: '{0} был сожжён дотла, пока боролся с {1}'
+    magic_self: '{0} был убит магией'
+    magic: '{0} был убит {1} с помощью магии'
+    blown_up: '{0} взорвался'
+    blown_up_by: '{0} был взорван {1}'
+    void_self: '{0} выпал из мира'
+    void: '{0} не захотел жить в том же мире, что и {1}'
+    lava_self: '{0} решил поплавать в лаве'
+    lava: '{0} упал в лаву, убегая от {1}'
+    projectile: '{0} застрелен {1}'
+    magma: '{0} зашёл в опасную зону из-за {1}'
+    magma_self: '{0} обнаружил, что пол — это лава'
+    poison: '{0} был отравлен {1}'
+    poison_self: '{0} отравился'
+    hunger: '{0} умер от голода'
+logger:
+    info: 'Информация'
+    error: 'Ошибка'
+    games_loaded: '&aВсе игры загружены'
+    game_not_exist: '&cИгра с ID &a«{0}»&c не существует'
+    loading_game: 'Загрузка игры с ID &a«{0}»'
+    game_already_exist: 'Не удалось загрузить игру {0}&c. Игра уже запущена'
+    cfg_load_success: 'Настройки игры загружены успешно'
+    delete_map_failed: '&cНе удалось удалить мир {0}'
+    find_map_failed: '&cНе удалось найти мир {0} в {1}'
+    copy_map_failed: '&cНе удалось скопировать мир в папку сервера'
+    load_map_failed: '&cНе удалось загрузить мир в игру {0}'
+    load_map_success: '&aМир успешно загружен'
+    invalid_team: '&cНеверная команда: {0}'
+    game_load_success: '&aИгра {0}&a успешно загружена'
+    game_restarting: 'Игра перезагружается'
+    game_disable: '&aИгра {0}&a с ID «{1}»&a успешно отключена'
+commands: 
+    chat: 'Чат'
+    no_permissions: '&cУ вас нет прав'
+    command_ussage: 'Использование команд: &b/{0} help'
+    only_players_can_use: '&cТолько игроки могут использовать эту команду'
+    player_offline: '{0} не в сети'
+    game_not_exist: '&cИгра не существует'
+kits:
+    kits: 'Наборы'
+    shop: 'Магазин'
+    not_enough_coins: 'Необходимо {0}&7 монет, чтобы купить этот набор!'
+    low_level: 'Необходим {0}&7-й уровень, чтобы купить этот набор!'
+    not_permission: 'Недостаточно прав, чтобы купить этот набор'
+    not_achievement: 'Необходимо получить достижение «{0}&7», чтобы купить этот набор'
+    gift: 'Этот набор можно получить в качестве подарка'
+    kit_is_bought: 'У вас уже есть набор {0}'
+    kit_buy_success: 'Вы купили набор {0}'
+    kit_choose_success: 'Выбрано: {0}'
+    kit_choose_failed: 'У вас нет набора {0}'
+    kit_available: '&aДоступен'
+    kit_unavailable: '&cНедоступен'
+vote:
+    chat_prefix: 'Голосование'
+    voted: "Вы проголосовали за {0}!"
+    ended: 'Голосование окончено! Результаты:'
+    result: '{0} &7— {1}'
+    count: '&a{0}+ &c{1}-'
+    not_in_team: 'Нужно находится в команде, чтобы голосовать!'
+tablist:
+    lobby: 
+        header: ' \n &3\u00AB &b&lPlayCraft.COM.UA &3\u00BB \n '
+        footer: ' \n &bЛобби \n '
+    game:
+        header: ' \n &3\u00AB &b&lPlayCraft.COM.UA &3\u00BB \n \n &3Time&f: {0}'
+        footer: ' \n {0} \n'
+GUI:
+    admin:
+        name: '&4Панель администратора'
+        #more in admin section
+    games:
+        name: '&5Активные игры'
+        game: '&7Игра: &d{0}'
+        mode: '&7Режим: &d{0} по {1}'
+        state: '&7Статус: &d{0}'
+        players: '&7Игроков: &d{0}'
+        glass_id_1: 2
+        glass_id_2: 6
+    kits:
+        name: '&2Наборы'
+        glass_id_1: 5
+        glass_id_2: 13
+    vote:
+        name: '&2Голосование'
+    shop: 
+        name: '&2Магазин'
+        glass_id_1: 2
+        glass_id_2: 6
+    stats:
+        name: "Статистика {0}"
+        glass_id_1: 1
+        glass_id_2: 4
+        item_kills: 
+            name: '&6Убийства'
+            kills: '&7Убийств: &6{0}'
+            kd: '&7KD: &6{0}'
+            top_kills: '&7Лучшее (убийства): &6{0}'
+        item_level: 
+            name: '&6Уровень'
+            level: '&7Уровень: &6{0}'
+            next_level: '&7След. уровень: &6{0}&7 (&6{1}&7/&6{2}&7)'
+        item_points: 
+            name: '&6Очки'
+            points: '&7Очков: &6{0}'
+        item_wins: 
+            name: '&6Победы'
+            wins: '&7Побед: &6{0}'
+            games_played: '&7Сыграно игр: &6{0}'
+            win_rate: '&7Шанс на победу: &6{0}'
+            top_wins: '&7Лучшее (победы): &6{0}'
+        item_deaths:
+            name: '&6Смерти'
+            deaths: '&7Смертей: &6{0}'
+        item_coins: 
+            name: '&6Монеты'
+            coins: '&7Монет: &6{0}'
+        item_another: 
+            name: '&6Прочее'
+            broken_quartz: '&7Разрушено ядер: &6{0}'
+            broken_ores: '&7Разрушено руд: &6{0}'
+            placed_blocks: '&7Установлено блоков: &6{0}'            
+    teams:
+        name: '&9Команды'
+        glass_id_1: 3
+        glass_id_2: 11
+        item_name: '{c}> {0} {c}<'
+        players: '&7Игроков: {c}{0}&7/{c}{1}'
+        item_leave: '&7Покинуть команду'
+    achievements:
+        name: '&2Достижения'
+        glass_id_1: 5
+        glass_id_2: 13
+        
+items:
+    games:
+        name: '&5Активные игры &7(ПКМ)'
+        games: '&7Игр: &d{0}'
+    kits:
+        name: '&2Наборы &7(ПКМ)'
+    vote:
+        name: '&1Голосование &7(ПКМ)'
+    stats:
+        name: '&6Статистика &7(ПКМ)'
+    teams:
+        name: '&9Команды &7(ПКМ)'
+    quit:
+        name: '&aВыход &7(ПКМ)'
+    hide_show:
+        show: '&7Показать'
+        hide: '&aСкрыть'
+        name: '&a{0} игроков &7(ПКМ)'
+    shop:
+        name: '&aМагазин &7(ПКМ)'
+    achievements:
+        name: '&aДостижения &7(ПКМ)'
+admin:
+    start_game: '&aНачать игру'
+    info:
+        name: '&aИнформация об игре'
+        gameid: 'ID:'
+        players: 'Игроков:'
+        state: 'Состояние:'
+        quartz: 'Ядер:'
+        started: 'Запущена:'
+    stop_game: '&aОстановить игру'

@@ -47,20 +47,23 @@ public class Config {
      */
     private void setupLang() {
         File langFolder = new File(plugin.getDataFolder() + File.separator + "language" + File.separator);
-        langFile = new File(langFolder, "messages_" + plugin.getConfig().getString("language", "en") + ".yml");
+        String langFileName = "messages_" + plugin.getConfig().getString("language", "en") + ".yml";
+        langFile = new File(langFolder, langFileName);
         if (!langFile.exists()) {
-            langFile = new File(langFolder, "messages_en.yml");
+            InputStream input = plugin.getResource(langFileName);
+            if (input == null) {
+                langFileName = "messages_en.yml";
+                input = plugin.getResource(langFileName);
+                plugin.getLogger().warning("Failed to load language file!!!");
+            }
+            langFile = new File(langFolder, langFileName);
             if (!langFile.exists()) {
-                InputStream input = plugin.getResource("messages_en.yml");
-                if (input == null) {
-                    plugin.getLogger().warning("Failed to load language file!!!");
-                }
                 try {
                     FileUtils.copyInputStreamToFile(input, langFile);
                 } catch (IOException ex) {
                     ex.printStackTrace();
                 }
-                lang = YamlConfiguration.loadConfiguration(new InputStreamReader(plugin.getResource("messages_en.yml")));
+                lang = YamlConfiguration.loadConfiguration(new InputStreamReader(plugin.getResource(langFileName)));
                 return;
             }
         }
